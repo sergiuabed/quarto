@@ -9,7 +9,7 @@ import numpy as np
 Move = namedtuple("Move", "position, piece")
 
 C = 2   # temperature
-MCTS_ITER_NUM = 100 # nr of iterations of the algorithm
+MCTS_ITER_NUM = 200 # nr of iterations of the algorithm
 
 def custom_deepcopy(state: Quarto) -> Quarto:
     state_copy = Quarto()
@@ -138,7 +138,7 @@ def mcts(parent: Node, maximizing: bool) -> int:
     if parent.state.check_winner() > -1: # in case leaf node is a terminal state
         v = 0 if maximizing else 1
 
-        parent.nr_wins += 1
+        parent.nr_wins += v
         parent.n += 1
         parent.compute_ucb()
         parent.compute_avg_val()

@@ -25,12 +25,12 @@ class RandomPlayer(quarto.Player):
 def main():
     count_0_win = 0
     count_1_win = 0
-    NR_GAMES = 10
+    NR_GAMES = 15
     for i in range(NR_GAMES):
         game = quarto.Quarto()
         #game.set_players((RandomPlayer(game), RandomPlayer(game)))
-        #game.set_players((GeneticMinMaxPlayer(game), RandomPlayer(game)))
-        game.set_players((MCTSPlayer(game), RandomPlayer(game)))
+        game.set_players((GeneticMinMaxPlayer(game), RandomPlayer(game)))
+        #game.set_players((MCTSPlayer(game), RandomPlayer(game)))
         #game.set_players((RandomPlayer(game), MCTSPlayer(game)))
         winner = game.run()
         logging.warning(f"main: Winner: player {winner}")
