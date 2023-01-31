@@ -4,6 +4,10 @@
 
 This report summarizes my activity throughout the course. This report is split in 4 parts: lab activities, peer-reviews, the final project (Quarto) and an appendix with the codes provided.
 
+Link to labs repo: [labs](https://github.com/sergiuabed/computational-intelligence-22)
+
+Link to project repo: [project](https://github.com/sergiuabed/quarto) (however, the repo is private. I sent an invitation to professor Calabrese)
+
 ## LAB ACTIVITIES
 
 During the lab activities I worked together with Riccardo Musumarra (s295103) and Luca Balduzzi (s303326).
